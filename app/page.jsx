@@ -8,9 +8,9 @@ const HomePage = () => {
       <main>
             <div className={styles.pageContainer}>              
               <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row' }}>
-                <img src='logo.png' style={{ maxWidth: '60px', maxHeight: '60px', alignItems: 'center' }} />
+                <img src='/logo.png' style={{ maxWidth: '60px', maxHeight: '60px', alignItems: 'center' }} />
                 <h1 style={{ fontSize: '25px', padding: '10px' }}> | </h1>
-                <img src='logorv.png' style={{ maxWidth: '60px', maxHeight: '60px', alignItems: 'center' }} />
+                <img src='/logorv.png' style={{ maxWidth: '60px', maxHeight: '60px', alignItems: 'center' }} />
               </div>
               <h1 style={{ fontSize: '30px', fontWeight: 'bolder', margin: '25px', fontFamily: 'golos text', fontWeight: '600' }}>Welcome to EduStack for RVITM</h1>
               <p style={{ margin: '25px', color: 'grey', fontFamily: 'sans-serif', marginBottom: '15vh'}}>A Platform Built to Simplify Attendance Tracking & Academics </p>
