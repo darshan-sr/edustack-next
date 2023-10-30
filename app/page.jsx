@@ -16,7 +16,17 @@ const HomePage = () => {
           }}
         >
           <Image alt="LOGO" src="/logo.png" width={60} height={60} />
-          <h1 style={{ fontSize: "25px", padding: "10px" }}> | </h1>
+          <h1
+            style={{
+              fontSize: "25px",
+              padding: "10px",
+              fontWeight: "normal",
+              margin: 0,
+            }}
+          >
+            {" "}
+            |{" "}
+          </h1>
           <Image alt="CollegeLOGO" src="/logorv.png" width={60} height={60} />
         </div>
         <h1
@@ -24,7 +34,6 @@ const HomePage = () => {
             fontSize: "30px",
             fontWeight: "bolder",
             margin: "20px",
-            fontWeight: "600",
           }}
         >
           Welcome to EduStack for RVITM

@@ -88,7 +88,17 @@ const SignIn = () => {
           }}
         >
           <Image alt="LOGO" src="/logo.png" width={60} height={60} />
-          <h1 style={{ fontSize: "25px", padding: "10px" }}> | </h1>
+          <h1
+            style={{
+              fontSize: "25px",
+              padding: "10px",
+              fontWeight: "normal",
+              margin: 0,
+            }}
+          >
+            {" "}
+            |{" "}
+          </h1>
           <Image alt="CollegeLOGO" src="/logorv.png" width={60} height={60} />
         </div>
         <div style={{ textAlign: "center", margin: "25px" }}>
@@ -96,6 +106,7 @@ const SignIn = () => {
             style={{
               fontWeight: "600",
               fontSize: "1.5rem",
+              fontFamily: "poppins",
             }}
           >
             Welcome!
@@ -109,7 +120,7 @@ const SignIn = () => {
           <input
             type="email"
             id="email"
-            autocomplete="email"
+            autoComplete="email"
             placeholder="Enter your email"
             className={styles.formInput}
             value={email}
@@ -127,7 +138,7 @@ const SignIn = () => {
             className={styles.formInput}
             type={passwordShown ? "text" : "password"}
             id="password"
-            autocomplete="current-password"
+            autoComplete="current-password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required // Add the required attribute
