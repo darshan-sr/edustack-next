@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
-import { getAuth, GoogleAuthProvider} from "firebase/auth";
-import { getFirestore } from 'firebase/firestore';
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDf-EVya-QkzVMITh1pyw1s6J7uFe13euY",
@@ -9,16 +9,13 @@ const firebaseConfig = {
   storageBucket: "edustack-rvitm.appspot.com",
   messagingSenderId: "1015290762687",
   appId: "1:1015290762687:web:106e221408b08a242fbd0a",
-  measurementId: "G-CBKS8RHR3S"
+  measurementId: "G-CBKS8RHR3S",
 };
 
-  
-
 export const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app)
+export const auth = getAuth(app);
 export const googleProvider = new GoogleAuthProvider();
 export const firestore = getFirestore(app);
-export const db = getFirestore(app)
+export const db = getFirestore(app);
 
 export default app;
-  
